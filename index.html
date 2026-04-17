@@ -3,33 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>مطععم العاصمة </title>
+    <title>مطعم العاصمة | مذاق يجمعنا</title>
+    <meta name="description" content="مطعم العاصمة في النصيرات - غزة يقدم أشهى الوجبات السريعة والمشاوي بجودة عالية وخدمة سريعة. اطلب الآن واستمتع بتجربة طعام مميزة لحظات طعم لا تُنسى.">
+    <meta name="keywords" content="مطعم العاصمة, مطاعم النصيرات, مطاعم غزة, وجبات سريعة غزة, مشاوي غزة, منيو العاصمة, دوار أبو صرار">
+    <link rel="canonical" href="https://alassema-restaurant.netlify.app/">
+
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="مطعم العاصمة">
+    <meta property="og:title" content="مطعم العاصمة - تجربة طعام مميزة في غزة">
+    <meta property="og:description" content="أفضل وجبات سريعة ومشاوي في النصيرات - تصفح المنيو واطلب الآن بسهولة.">
+    <meta property="og:image" content="https://alassema-restaurant.netlify.app/assets/images/logo.jpg">
+    <meta property="og:url" content="https://alassema-restaurant.netlify.app/">
+    <meta property="og:locale" content="ar_AR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مطعم العاصمة - النصيرات">
+    <meta name="twitter:description" content="لحظات طعم لا تُنسى - أفضل وجبات سريعة ومشاوي في النصيرات.">
+    <meta name="twitter:image" content="https://alassema-restaurant.netlify.app/assets/images/logo.jpg">
+    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "مطعم العاصمة",
+          "image": "https://alassema-restaurant.netlify.app/assets/images/logo.jpg",
+          "url": "https://alassema-restaurant.netlify.app/",
+          "telephone": "+970594804807",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "دوار أبو صرار",
+            "addressLocality": "النصيرات",
+            "addressRegion": "غزة",
+            "addressCountry": "PS"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "31.4485",
+            "longitude": "34.3918"
+          },
+          "servesCuisine": ["Fast Food", "Grill", "Arabic Food"],
+          "priceRange": "$$",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+              "opens": "12:00",
+              "closes": "23:59"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Friday",
+              "opens": "14:00",
+              "closes": "23:59"
+            }
+          ]
+        }
+        </script>
 </head>
 
 <body>
 
-    <!-- شاشة التحميل (Splash Screen) -->
-    <div class="splash-screen" id="splashScreen">
-        <div class="splash-content">
-            <div class="splash-logo-text">
-                مطعم<br>
-                <span>العاصمة</span>
+    <div class="splash-screen" id="splashScreen" style="background-color: #ffffff;">
+        <div class="splash-content" style="text-align: center;">
+            <div class="splash-logo-container" style="width: 100px; height: 100px; margin: 0 auto;">
+                <img src="assets/images/logo.jpg" alt="العاصمة" class="splash-logo-img" style="width: 100%; border-radius: 50%;">
             </div>
-            <div class="splash-subtitle">دوار أبو صرار | أشهى المأكولات منذ 1990</div>
-            <div class="splash-spinner"></div>
+            
+            <div class="splash-text" style="margin-top: 15px; color: #333; font-size: 1.1rem; font-weight: bold;">
+                لحظات طعم لا تُنسى
+            </div>
+    
+            <div class="splash-spinner" style="width: 25px; height: 25px; border-width: 2px; margin: 15px auto 0;"></div>
         </div>
     </div>
 
-    <!-- المحتوى الرئيسي -->
     <div class="main-content" id="mainContent">
         <header>
             <div class="container">
                 <div class="logo">
-                    <h1>🏛️ مطعم العاصمة</h1>
-                    <p>دوار أبو صرار | أشهى المأكولات منذ 1990</p>
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/images/logo.jpg" alt="Logo" class="header-logo-img">
+                        <div class="logo-text-wrapper">
+                            <h1>مطعم العاصمة</h1>
+                            <p>النصيرات | المذاق الرفيع</p>
+                        </div>
+                    </a>
                 </div>
+                
                 <nav>
                     <ul>
                         <li><a href="index.html" class="active">الرئيسية</a></li>
@@ -41,34 +109,31 @@
 
         <section class="hero">
             <div class="hero-content">
-                <h2>أهلاً بك في منيو مطعم العاصمة </h2>
-                <p>دوار أبو صرار - تصفح قائمتنا، اختر وجبتك المفضلة، واستمتع بأشهى الأطباق</p>
-                <a href="menu.html" class="btn-primary">تصفح المنيو الآن 🍽️</a>
-                <div class="contact-buttons">
-                    <a href="https://wa.me/970594804807" target="_blank" class="booking-btn">📱 احجز عبر واتساب</a>
-                    <a href="tel:0594804807" class="booking-btn call-btn">📞 اتصل الآن: 0594804807</a>
+                <h2>حيث يجتمع الفن والمذاق 🥗</h2>
+                <p>نقدم لك تشكيلة مختارة من الوجبات المحضرة بشغف لتناسب ذوقك الرفيع.</p>
+                <div class="hero-cta">
+                    <a href="menu.html" class="btn-primary">استكشف المنيو</a>
                 </div>
             </div>
         </section>
 
         <section class="features">
             <div class="container">
-                <h3 class="section-title">لماذا مطعم النصيرات؟</h3>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">👨‍🍳</div>
-                        <h4>أشهر الطهاة</h4>
-                        <p>نخبة من أمهر الطهاة يعدون لك أشهى الأطباق</p>
+                        <div class="feature-icon">✨</div>
+                        <h4>جودة تليق بك</h4>
+                        <p>نعتمد أفضل المعايير في اختيار المكونات واللحوم الطازجة يومياً.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🥩</div>
-                        <h4>أجود اللحوم</h4>
-                        <p>نستخدم أجود أنواع اللحوم الطازجة يومياً</p>
+                        <div class="feature-icon">🔥</div>
+                        <h4>تحضير فوري</h4>
+                        <p>وجبتك تُحضر بعناية لحظة طلبك لتصلك ساخنة وطازجة تماماً.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🚚</div>
-                        <h4>توصيل مجاني</h4>
-                        <p>توصيل سريع ومجاني لجميع أنحاء دوار أبو صرار</p>
+                        <div class="feature-icon">📍</div>
+                        <h4>دقة المواعيد</h4>
+                        <p>نلتزم بتقديم خدمة سريعة واحترافية، سواء داخل المطعم أو في التوصيل.</p>
                     </div>
                 </div>
             </div>
@@ -79,23 +144,29 @@
                 <div class="footer-content">
                     <div class="footer-section">
                         <h4>🏛️ مطعم العاصمة</h4>
-                        <p>دوار أبو صرار - نقدم لكم أشهى المأكولات منذ أكثر من 30 عاماً</p>
+                        <p><i class="fas fa-map-marker-alt"></i> النصيرات - دوار أبو صرار</p>
                     </div>
+        
                     <div class="footer-section">
-                        <h4>ساعات العمل</h4>
-                        <p>يومياً: 12:00 ظهراً - 12:00 منتصف الليل</p>
-                        <p>الجمعة: 2:00 ظهراً - 12:00 منتصف الليل</p>
+                        <h4>أوقات العمل</h4>
+                        <p>يومياً: 12:00 م - 12:00 ص</p>
+                        <p>الجمعة: 2:00 م - 12:00 ص</p>
                     </div>
+        
                     <div class="footer-section">
-                        <h4>📞 للحجز والاستفسار</h4>
-                        <p>هاتف: <a href="tel:0594804807" style="color:#FFD700; text-decoration:none;">0594804807</a>
-                        </p>
-                        <p>واتساب: <a href="https://wa.me/970594804807" target="_blank"
-                                style="color:#FFD700; text-decoration:none;">0594804807</a></p>
+                        <h4>تواصل معنا</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/asemarest/" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/asemarest" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/970594804807" target="_blank" class="social-icon wa"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="call-action-wrapper">
+                            <a href="tel:0594804807" class="booking-btn call-btn">اطلب وجبتك الآن</a>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>© 2026 مطعم العاصمة-النصيرات- دوار أبو صرار. جميع الحقوق محفوظة</p>
+                    <p>© 2026 مطعم العاصمة. جميع الحقوق محفوظة</p>
                 </div>
             </div>
         </footer>
@@ -103,5 +174,4 @@
 
     <script src="js/main.js"></script>
 </body>
-
 </html>
