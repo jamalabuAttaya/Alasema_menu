@@ -7,32 +7,16 @@ const translations = {
         gallery: "المعرض",
         contact: "اتصل بنا",
         viewMenu: "استكشف المنيو",
-        visitUs: "زورونا",
-        featuredDishes: "أطباقنا المميزة",
-        missionValues: "رؤيتنا وقيمنا",
-        whyChooseUs: "لماذا تختارنا",
-        getInTouch: "تواصل معنا",
-        quickLinks: "قائمة سريعة",
-        socialMedia: "وسائل التواصل",
-        location: "الموقع",
-        allRightsReserved: "جميع الحقوق محفوظة"
+        visitUs: "زورونا"
     },
     en: {
         home: "HOME",
         menu: "MENU",
-        about: "About",
-        gallery: "Gallery",
-        contact: "Contact",
+        about: "ABOUT",
+        gallery: "GALLERY",
+        contact: "CONTACT",
         viewMenu: "VIEW MENU",
-        visitUs: "VISIT US",
-        featuredDishes: "FEATURED DISHES",
-        missionValues: "MISSION AND VALUES",
-        whyChooseUs: "WHY CHOOSE US",
-        getInTouch: "GET IN TOUCH",
-        quickLinks: "Quick Links",
-        socialMedia: "Social Media",
-        location: "Location",
-        allRightsReserved: "All Rights Reserved"
+        visitUs: "VISIT US"
     }
 };
 
@@ -49,11 +33,11 @@ function switchLanguage(lang) {
     });
     
     // تحديث النصوص
-    document.querySelectorAll('[data-en]').forEach(el => {
-        if (lang === 'ar') {
-            el.textContent = el.getAttribute('data-ar') || el.textContent;
-        } else {
-            el.textContent = el.getAttribute('data-en') || el.textContent;
+    document.querySelectorAll('[data-ar], [data-en]').forEach(el => {
+        if (lang === 'ar' && el.hasAttribute('data-ar')) {
+            el.textContent = el.getAttribute('data-ar');
+        } else if (lang === 'en' && el.hasAttribute('data-en')) {
+            el.textContent = el.getAttribute('data-en');
         }
     });
     

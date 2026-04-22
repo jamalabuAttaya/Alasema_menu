@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>اتصل بنا | مطعم العاصمة ALASEMA</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+        <div class="splash-logo-container">
+            <img src="assets/images/logo.jpg" alt="ALASEMA" class="splash-logo-img">
+        </div>
+        <div class="splash-title">ALASEMA</div>
+        <div class="splash-subtitle">مطعم العاصمة</div>
+        <div class="splash-text">تواصل معنا</div>
+        <div class="splash-spinner"></div>
+    </div>
+</div>
+
+<div class="main-content" id="mainContent">
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/logo.jpg" alt="ALASEMA" class="header-logo-img">
+                    <div class="logo-text">
+                        <h1>ALASEMA</h1>
+                        <p>مطعم العاصمة</p>
+                    </div>
+                </a>
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="ar">عربي</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-ar="الرئيسية" data-en="HOME">الرئيسية</a></li>
+                <li><a href="menu.html" data-ar="المنيو" data-en="MENU">المنيو</a></li>
+                <li><a href="about.html" data-ar="عن المطعم" data-en="ABOUT">عن المطعم</a></li>
+                <li><a href="gallery.html" data-ar="المعرض" data-en="GALLERY">المعرض</a></li>
+                <li><a href="contact.html" class="active" data-ar="اتصل بنا" data-en="CONTACT">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-page">
+        <div class="container">
+            <h2 class="page-title">
+                <span class="title-ar">تواصل معنا</span>
+                <span class="title-en">GET IN TOUCH</span>
+            </h2>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-side">
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-ar="العنوان" data-en="Address">العنوان</h4>
+                                <p>النصيرات - دوار أبو صرار، غزة</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-ar="رقم الهاتف" data-en="Phone">رقم الهاتف</h4>
+                                <p>+970594804807</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h4>
+                                <p>asemarest@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4 data-ar="واتساب" data-en="WhatsApp">واتساب</h4>
+                                <p>+970594804807</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-section">
+                        <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+                        <div class="social-icons-large">
+                            <a href="https://www.facebook.com/asemarest/" target="_blank" class="social-circle fb">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/asemarest" target="_blank" class="social-circle ig">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/+970594804807" target="_blank" class="social-circle wa">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="social-circle tt" id="tiktok-contact">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="الاسم" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="رسالتك..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span data-ar="إرسال" data-en="Send">إرسال</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- الخريطة -->
+            <div class="map-section">
+                <h3 data-ar="موقعنا" data-en="Our Location">موقعنا</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217124.38565334815!2d34.32847665!3d31.44847635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f2a2a5b5b5b%3A0x0!2zMzHCsDI2JzU0LjUiTiAzNMKwMjAnMzAuMCJF!5e0!3m2!1sar!2s!4v1700000000000!5m2!1sar!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.jpg" alt="ALASEMA">
+                    <h3>ALASEMA</h3>
+                    <p>مطعم العاصمة</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">الرئيسية</a>
+                    <a href="menu.html">المنيو</a>
+                    <a href="about.html">عن المطعم</a>
+                    <a href="gallery.html">المعرض</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/asemarest/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/asemarest" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+970594804807" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 مطعم العاصمة - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/lang.js"></script>
+</body>
+</html>
