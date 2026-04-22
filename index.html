@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>المنيو | مطعم العاصمة ALASEMA</title>
+    <title>مطعم العاصمة | ALASEMA</title>
+    <meta name="description" content="مطعم العاصمة في النصيرات - غزة يقدم أشهى الوجبات السريعة والمشاوي">
+    <meta name="google-site-verification" content="ZePMrccEI_mKXvgqI4uJsRuyv08kpk_qlB1QU6Xp2k4" />
+    <link rel="canonical" href="https://alassema-restaurant.netlify.app/">
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- شاشة التحميل -->
 <div class="splash-screen" id="splashScreen">
     <div class="splash-content">
         <div class="splash-logo-container">
@@ -18,13 +23,14 @@
         </div>
         <div class="splash-title">ALASEMA</div>
         <div class="splash-subtitle">مطعم العاصمة</div>
-        <div class="splash-text">قائمة طعامنا</div>
+        <div class="splash-text">لحظات طعم لا تُنسى</div>
         <div class="splash-spinner"></div>
     </div>
 </div>
 
 <div class="main-content" id="mainContent">
     
+    <!-- الهيدر -->
     <header>
         <div class="container">
             <div class="logo">
@@ -32,22 +38,25 @@
                     <img src="assets/images/logo.jpg" alt="ALASEMA" class="header-logo-img">
                     <div class="logo-text">
                         <h1>ALASEMA</h1>
-                        <p>مطعم العاصمة</p>
+                        <p data-ar="مطعم العاصمة" data-en="ALASEMA Restaurant">مطعم العاصمة</p>
                     </div>
                 </a>
             </div>
+            
             <div class="lang-switch">
                 <button class="lang-btn active" data-lang="ar">عربي</button>
                 <button class="lang-btn" data-lang="en">EN</button>
             </div>
+            
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
+        
         <nav>
             <ul>
-                <li><a href="index.html" data-ar="الرئيسية" data-en="HOME">الرئيسية</a></li>
-                <li><a href="menu.html" class="active" data-ar="المنيو" data-en="MENU">المنيو</a></li>
+                <li><a href="index.html" class="active" data-ar="الرئيسية" data-en="HOME">الرئيسية</a></li>
+                <li><a href="menu.html" data-ar="المنيو" data-en="MENU">المنيو</a></li>
                 <li><a href="about.html" data-ar="عن المطعم" data-en="ABOUT">عن المطعم</a></li>
                 <li><a href="gallery.html" data-ar="المعرض" data-en="GALLERY">المعرض</a></li>
                 <li><a href="contact.html" data-ar="اتصل بنا" data-en="CONTACT">اتصل بنا</a></li>
@@ -55,36 +64,106 @@
         </nav>
     </header>
 
-    <section class="menu-page">
-        <div class="container">
-            <h2 class="page-title">
-                <span class="title-ar">قائمة الطعام</span>
-                <span class="title-en">OUR MENU</span>
-            </h2>
-            <p class="page-subtitle" data-ar="اختر وجبتك المفضلة من تشكيلتنا المختارة بعناية" data-en="Choose your favorite meal from our carefully selected collection">
-                اختر وجبتك المفضلة من تشكيلتنا المختارة بعناية
-            </p>
-
-            <!-- أزرار الطلب السريع -->
-            <div class="order-buttons">
-                <a href="https://wa.me/+970594804807" target="_blank" class="order-btn whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> <span data-ar="اطلب عبر واتساب" data-en="Order via WhatsApp">اطلب عبر واتساب</span>
-                </a>
-                <a href="tel:0594804807" class="order-btn call-btn">
-                    <i class="fas fa-phone-alt"></i> <span data-ar="اتصل الآن" data-en="Call Now">اتصل الآن</span>
-                </a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-ar">طعم لا يُنسى</span>
+                <span class="title-en">A CULINARY JOURNEY BEYOND ORDINARY</span>
+            </h1>
+            <div class="hero-buttons">
+                <a href="menu.html" class="hero-btn primary" data-ar="استكشف المنيو" data-en="VIEW MENU">استكشف المنيو</a>
+                <a href="contact.html" class="hero-btn secondary" data-ar="زورونا" data-en="VISIT US">زورونا</a>
             </div>
+        </div>
+    </section>
 
-            <!-- حاوية عرض المنيو -->
-            <div id="menu-container">
-                <div class="loading-spinner">
-                    <div class="spinner"></div>
-                    <p data-ar="جاري تحميل القائمة..." data-en="Loading menu...">جاري تحميل القائمة...</p>
+    <!-- الأطباق المميزة -->
+    <section class="featured-dishes">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-ar">أطباقنا المميزة</span>
+                <span class="title-en">FEATURED DISHES</span>
+            </h2>
+            
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="assets/images/dish-ribeye.jpg" alt="Signature Ribeye" onerror="this.src='assets/images/placeholder.jpg'">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name-en">SIGNATURE RIBEYE</h3>
+                        <p class="dish-name-ar">طعمك ريبعة</p>
+                        <p class="dish-desc">Ribeye steak, char-grilled and roasted, accompanied by a side of rice.</p>
+                        <div class="dish-price">₪65.00</div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="assets/images/dish-burger.jpg" alt="Truffle Wagyu Burger" onerror="this.src='assets/images/placeholder.jpg'">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name-en">TRUFFLE WAGYU BURGER</h3>
+                        <p class="dish-name-ar">طبق بريجا وورغو</p>
+                        <p class="dish-desc">Lamb burger with truffle butter and caramelized onions.</p>
+                        <div class="dish-price">₪65.00</div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="assets/images/dish-meshwi.jpg" alt="Mediterranean Meshwi" onerror="this.src='assets/images/placeholder.jpg'">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name-en">MEDITERRANEAN MESHWI</h3>
+                        <p class="dish-name-ar">الذي أفرز</p>
+                        <p class="dish-desc">Mediterranean-inspired dishes with authentic flavors.</p>
+                        <div class="dish-price">₪65.00</div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="assets/images/dish-lamb.jpg" alt="Gold-Leaf Lamb Chops" onerror="this.src='assets/images/placeholder.jpg'">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name-en">GOLD-LEAF LAMB CHOPS</h3>
+                        <p class="dish-name-ar">كلهل ليفر بومي</p>
+                        <p class="dish-desc">Grilled lamb chops with roasted potatoes and vegetables.</p>
+                        <div class="dish-price">₪65.00</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- مميزات سريعة -->
+    <section class="quick-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3 data-ar="جودة عالية" data-en="Premium Quality">جودة عالية</h3>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <h3 data-ar="توصيل سريع" data-en="Fast Delivery">توصيل سريع</h3>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3 data-ar="مكونات طازجة" data-en="Fresh Ingredients">مكونات طازجة</h3>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3 data-ar="خدمة على مدار اليوم" data-en="24/7 Service">خدمة على مدار اليوم</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -94,21 +173,21 @@
                     <p>مطعم العاصمة</p>
                 </div>
                 <div class="footer-links">
-                    <a href="index.html">الرئيسية</a>
-                    <a href="menu.html">المنيو</a>
-                    <a href="about.html">عن المطعم</a>
-                    <a href="gallery.html">المعرض</a>
-                    <a href="contact.html">اتصل بنا</a>
+                    <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                    <a href="menu.html" data-ar="المنيو" data-en="Menu">المنيو</a>
+                    <a href="about.html" data-ar="عن المطعم" data-en="About">عن المطعم</a>
+                    <a href="gallery.html" data-ar="المعرض" data-en="Gallery">المعرض</a>
+                    <a href="contact.html" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
                 </div>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/asemarest/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/asemarest" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://wa.me/+970594804807" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" id="tiktok-link-footer" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" id="tiktok-link" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 مطعم العاصمة - جميع الحقوق محفوظة</p>
+                <p>© 2026 <span data-ar="مطعم العاصمة" data-en="ALASEMA Restaurant">مطعم العاصمة</span>. <span data-ar="جميع الحقوق محفوظة" data-en="All Rights Reserved">جميع الحقوق محفوظة</span></p>
             </div>
         </div>
     </footer>

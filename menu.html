@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>قائمة الطعام | مطعم العاصمة</title>
+    <title>المنيو | مطعم العاصمة ALASEMA</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
+<div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+        <div class="splash-logo-container">
+            <img src="assets/images/logo.jpg" alt="ALASEMA" class="splash-logo-img">
+        </div>
+        <div class="splash-title">ALASEMA</div>
+        <div class="splash-subtitle">مطعم العاصمة</div>
+        <div class="splash-text">قائمة طعامنا</div>
+        <div class="splash-spinner"></div>
+    </div>
+</div>
+
+<div class="main-content" id="mainContent">
+    
     <header>
         <div class="container">
             <div class="logo">
                 <a href="index.html" class="logo-link">
-                    <img src="assets/images/logo.jpg" alt="Logo" class="header-logo-img">
-                    <div class="logo-text-wrapper">
-                        <h1>مطعم العاصمة</h1>
-                        <p>النصيرات | المذاق الرفيع</p>
+                    <img src="assets/images/logo.jpg" alt="ALASEMA" class="header-logo-img">
+                    <div class="logo-text">
+                        <h1>ALASEMA</h1>
+                        <p>مطعم العاصمة</p>
                     </div>
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="menu.html" class="active">المنيو</a></li>
-                </ul>
-            </nav>
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="ar">عربي</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-ar="الرئيسية" data-en="HOME">الرئيسية</a></li>
+                <li><a href="menu.html" class="active" data-ar="المنيو" data-en="MENU">المنيو</a></li>
+                <li><a href="about.html" data-ar="عن المطعم" data-en="ABOUT">عن المطعم</a></li>
+                <li><a href="gallery.html" data-ar="المعرض" data-en="GALLERY">المعرض</a></li>
+                <li><a href="contact.html" data-ar="اتصل بنا" data-en="CONTACT">اتصل بنا</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="menu-page">
         <div class="container">
-            <h2 class="page-title">قائمة المذاق المميز</h2>
-            <p class="page-subtitle">اختر وجبتك المفضلة من تشكيلتنا المختارة بعناية</p>
+            <h2 class="page-title">
+                <span class="title-ar">قائمة الطعام</span>
+                <span class="title-en">OUR MENU</span>
+            </h2>
+            <p class="page-subtitle" data-ar="اختر وجبتك المفضلة من تشكيلتنا المختارة بعناية" data-en="Choose your favorite meal from our carefully selected collection">
+                اختر وجبتك المفضلة من تشكيلتنا المختارة بعناية
+            </p>
 
-            <div class="contact-buttons">
-                <a href="https://wa.me/+970594804807" target="_blank" class="booking-btn wa-btn">
-                    <i class="fab fa-whatsapp"></i> اطلب عبر واتساب
+            <!-- أزرار الطلب السريع -->
+            <div class="order-buttons">
+                <a href="https://wa.me/+970594804807" target="_blank" class="order-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> <span data-ar="اطلب عبر واتساب" data-en="Order via WhatsApp">اطلب عبر واتساب</span>
                 </a>
-                <a href="tel:0594804807" class="booking-btn call-btn">
-                    <i class="fas fa-phone-alt"></i> اتصل الآن
+                <a href="tel:0594804807" class="order-btn call-btn">
+                    <i class="fas fa-phone-alt"></i> <span data-ar="اتصل الآن" data-en="Call Now">اتصل الآن</span>
                 </a>
             </div>
 
+            <!-- حاوية عرض المنيو -->
             <div id="menu-container">
-                <div class="loading">
-                    <div class="splash-spinner"></div>
-                    <p>جاري تحضير القائمة...</p>
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p data-ar="جاري تحميل القائمة..." data-en="Loading menu...">جاري تحميل القائمة...</p>
                 </div>
             </div>
         </div>
@@ -57,34 +88,33 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>🏛️ مطعم العاصمة</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> النصيرات - دوار أبو صرار</p>
-                    <p><i class="fas fa-envelope"></i> asemarest@gmail.com</p>
+                <div class="footer-logo">
+                    <img src="assets/images/logo.jpg" alt="ALASEMA">
+                    <h3>ALASEMA</h3>
+                    <p>مطعم العاصمة</p>
                 </div>
-    
-                <div class="footer-section">
-                    <h4>أوقات العمل</h4>
-                    <p>يومياً: 12:00 م - 12:00 ص</p>
-                    <p>الجمعة: 2:00 م - 12:00 ص</p>
+                <div class="footer-links">
+                    <a href="index.html">الرئيسية</a>
+                    <a href="menu.html">المنيو</a>
+                    <a href="about.html">عن المطعم</a>
+                    <a href="gallery.html">المعرض</a>
+                    <a href="contact.html">اتصل بنا</a>
                 </div>
-    
-                <div class="footer-section">
-                    <h4>تواصل معنا</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/asemarest/" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/asemarest" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/+970594804807" target="_blank" class="social-icon wa"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/asemarest/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/asemarest" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+970594804807" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" id="tiktok-link-footer" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 مطعم العاصمة. جميع الحقوق محفوظة</p>
+                <p>© 2026 مطعم العاصمة - جميع الحقوق محفوظة</p>
             </div>
         </div>
     </footer>
+</div>
 
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/lang.js"></script>
 </body>
-
 </html>
