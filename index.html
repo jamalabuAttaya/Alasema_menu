@@ -1,179 +1,456 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
-   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>مطعم العاصمة | مذاق يجمعنا</title>
-    <meta name="description" content="مطعم العاصمة في النصيرات - غزة يقدم أشهى الوجبات السريعة والمشاوي بجودة عالية وخدمة سريعة. اطلب الآن واستمتع بتجربة طعام مميزة لحظات طعم لا تُنسى.">
-    <meta name="keywords" content="مطعم العاصمة, مطاعم النصيرات, مطاعم غزة, وجبات سريعة غزة, مشاوي غزة, منيو العاصمة, دوار أبو صرار">
+    <title>مطعم العاصمة | ALASEMA - مذاق يجمعنا</title>
+    <meta name="description" content="مطعم العاصمة في النصيرات - غزة يقدم أشهى الوجبات السريعة والمشاوي بجودة عالية">
+    <meta name="keywords" content="مطعم العاصمة, Alasema, مطاعم النصيرات, مطاعم غزة">
     <meta name="google-site-verification" content="ZePMrccEI_mKXvgqI4uJsRuyv08kpk_qlB1QU6Xp2k4" />
     <link rel="canonical" href="https://alassema-restaurant.netlify.app/">
-
     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
-    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
-
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="مطعم العاصمة">
-    <meta property="og:title" content="مطعم العاصمة - تجربة طعام مميزة في غزة">
-    <meta property="og:description" content="أفضل وجبات سريعة ومشاوي في النصيرات - تصفح المنيو واطلب الآن بسهولة.">
-    <meta property="og:image" content="https://alassema-restaurant.netlify.app/assets/images/logo.jpg">
-    <meta property="og:url" content="https://alassema-restaurant.netlify.app/">
-    <meta property="og:locale" content="ar_AR">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="مطعم العاصمة - النصيرات">
-    <meta name="twitter:description" content="لحظات طعم لا تُنسى - أفضل وجبات سريعة ومشاوي في النصيرات.">
-    <meta name="twitter:image" content="https://alassema-restaurant.netlify.app/assets/images/logo.jpg">
     
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org -->
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Restaurant",
-          "name": "مطعم العاصمة",
-          "image": "https://alassema-restaurant.netlify.app/assets/images/logo.jpg",
-          "url": "https://alassema-restaurant.netlify.app/",
-          "telephone": "+970594804807",
-          "address": {
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "مطعم العاصمة",
+        "alternateName": "ALASEMA",
+        "image": "https://alassema-restaurant.netlify.app/assets/images/logo.jpg",
+        "url": "https://alassema-restaurant.netlify.app/",
+        "telephone": "+970594804807",
+        "address": {
             "@type": "PostalAddress",
             "streetAddress": "دوار أبو صرار",
             "addressLocality": "النصيرات",
             "addressRegion": "غزة",
             "addressCountry": "PS"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "31.4485",
-            "longitude": "34.3918"
-          },
-          "servesCuisine": ["Fast Food", "Grill", "Arabic Food"],
-          "priceRange": "$$",
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
-              "opens": "12:00",
-              "closes": "23:59"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Friday",
-              "opens": "14:00",
-              "closes": "23:59"
-            }
-          ]
-        }
-        </script>
+        },
+        "servesCuisine": ["Fast Food", "Grill", "Arabic Food"],
+        "priceRange": "$$"
+    }
+    </script>
 </head>
-
 <body>
 
-    <div class="splash-screen" id="splashScreen" style="background-color: #ffffff;">
-        <div class="splash-content" style="text-align: center;">
-            <div class="splash-logo-container" style="width: 100px; height: 100px; margin: 0 auto;">
-                <img src="assets/images/logo.jpg" alt="العاصمة" class="splash-logo-img" style="width: 100%; border-radius: 50%;">
+    <!-- ========== شاشة التحميل SPLASH SCREEN ========== -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-content">
+            <div class="splash-logo-container">
+                <img src="assets/images/logo.jpg" alt="ALASEMA" class="splash-logo-img">
             </div>
-            
-            <div class="splash-text" style="margin-top: 15px; color: #333; font-size: 1.1rem; font-weight: bold;">
-                لحظات طعم لا تُنسى
-            </div>
-    
-            <div class="splash-spinner" style="width: 25px; height: 25px; border-width: 2px; margin: 15px auto 0;"></div>
+            <div class="splash-title">ALASEMA</div>
+            <div class="splash-subtitle">مطعم العاصمة</div>
+            <div class="splash-text">لحظات طعم لا تُنسى</div>
+            <div class="splash-spinner"></div>
         </div>
     </div>
 
     <div class="main-content" id="mainContent">
+        
+        <!-- ========== الهيدر HEADER ========== -->
         <header>
             <div class="container">
                 <div class="logo">
                     <a href="index.html" class="logo-link">
-                        <img src="assets/images/logo.jpg" alt="Logo" class="header-logo-img">
-                        <div class="logo-text-wrapper">
-                            <h1>مطعم العاصمة</h1>
-                            <p>النصيرات | المذاق الرفيع</p>
+                        <img src="assets/images/logo.jpg" alt="ALASEMA" class="header-logo-img">
+                        <div class="logo-text">
+                            <h1>ALASEMA</h1>
+                            <p>مطعم العاصمة</p>
                         </div>
                     </a>
                 </div>
                 
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="active">الرئيسية</a></li>
-                        <li><a href="menu.html">المنيو</a></li>
+                        <li><a href="#home" class="active" data-en="HOME">الرئيسية</a></li>
+                        <li><a href="menu.html" data-en="MENU">المنيو</a></li>
+                        <li><a href="#about" data-en="About">عن المطعم</a></li>
+                        <li><a href="#gallery" data-en="Gallery">المعرض</a></li>
+                        <li><a href="#contact" data-en="Contact">اتصل بنا</a></li>
                     </ul>
                 </nav>
+                
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="ar">عربي</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </header>
 
-        <section class="hero">
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h2>حيث يجتمع الفن والمذاق </h2>
-                <p>نقدم لك تشكيلة مختارة من الوجبات المحضرة بشغف لتناسب ذوقك الرفيع.</p>
-                <div class="hero-cta">
-                    <a href="menu.html" class="btn-primary">استكشف المنيو</a>
+                <h1 class="hero-title">
+                    <span class="title-ar">طعم لا يُنسى</span>
+                    <span class="title-en">A CULINARY JOURNEY BEYOND ORDINARY</span>
+                </h1>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="hero-btn primary" data-en="VIEW MENU">استكشف المنيو</a>
+                    <a href="#contact" class="hero-btn secondary" data-en="VISIT US">زورونا</a>
                 </div>
             </div>
         </section>
 
-        <section class="features">
+        <!-- ========== الأطباق المميزة FEATURED DISHES ========== -->
+        <section class="featured-dishes">
             <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">✨</div>
-                        <h4>جودة تليق بك</h4>
-                        <p>نعتمد أفضل المعايير في اختيار المكونات واللحوم الطازجة يومياً.</p>
+                <h2 class="section-title">
+                    <span class="title-ar">أطباقنا المميزة</span>
+                    <span class="title-en">FEATURED DISHES</span>
+                </h2>
+                
+                <div class="dishes-grid">
+                    <!-- Signature Ribeye -->
+                    <div class="dish-card">
+                        <div class="dish-image">
+                            <img src="assets/images/dish-ribeye.jpg" alt="Signature Ribeye" onerror="this.src='assets/images/placeholder.jpg'">
+                        </div>
+                        <div class="dish-info">
+                            <h3 class="dish-name-en">SIGNATURE RIBEYE</h3>
+                            <p class="dish-name-ar">طعمك ريبعة</p>
+                            <p class="dish-desc">Ribeye steak, char-grilled and roasted, accompanied by a side of rice.</p>
+                            <div class="dish-price">₪65.00</div>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔥</div>
-                        <h4>تحضير فوري</h4>
-                        <p>وجبتك تُحضر بعناية لحظة طلبك لتصلك ساخنة وطازجة تماماً.</p>
+
+                    <!-- Truffle Wagyu Burger -->
+                    <div class="dish-card">
+                        <div class="dish-image">
+                            <img src="assets/images/dish-burger.jpg" alt="Truffle Wagyu Burger" onerror="this.src='assets/images/placeholder.jpg'">
+                        </div>
+                        <div class="dish-info">
+                            <h3 class="dish-name-en">TRUFFLE WAGYU BURGER</h3>
+                            <p class="dish-name-ar">طبق بريجا وورغو</p>
+                            <p class="dish-desc">Lamb burger with truffle butter and caramelized onions.</p>
+                            <div class="dish-price">₪65.00</div>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🕒</div>
-                        <h4>دقة المواعيد</h4>
-                        <p>نلتزم بتقديم خدمة سريعة واحترافية، سواء داخل المطعم أو في التوصيل.</p>
+
+                    <!-- Mediterranean Meshwi -->
+                    <div class="dish-card">
+                        <div class="dish-image">
+                            <img src="assets/images/dish-meshwi.jpg" alt="Mediterranean Meshwi" onerror="this.src='assets/images/placeholder.jpg'">
+                        </div>
+                        <div class="dish-info">
+                            <h3 class="dish-name-en">MEDITERRANEAN MESHWI</h3>
+                            <p class="dish-name-ar">الذي أفرز</p>
+                            <p class="dish-desc">Mediterranean-inspired dishes with authentic flavors.</p>
+                            <div class="dish-price">₪65.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Gold-Leaf Lamb Chops -->
+                    <div class="dish-card">
+                        <div class="dish-image">
+                            <img src="assets/images/dish-lamb.jpg" alt="Gold-Leaf Lamb Chops" onerror="this.src='assets/images/placeholder.jpg'">
+                        </div>
+                        <div class="dish-info">
+                            <h3 class="dish-name-en">GOLD-LEAF LAMB CHOPS</h3>
+                            <p class="dish-name-ar">كلهل ليفر بومي</p>
+                            <p class="dish-desc">Grilled lamb chops with roasted potatoes and vegetables.</p>
+                            <div class="dish-price">₪65.00</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ========== الرؤية والقيم MISSION & VALUES ========== -->
+        <section class="mission-values">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-ar">رؤيتنا وقيمنا</span>
+                    <span class="title-en">MISSION AND VALUES</span>
+                </h2>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3 class="value-title">رؤيتنا</h3>
+                        <p class="value-desc">نطمح لأن نكون الوجهة الأولى لعشاق الطعام في غزة، حيث نجمع بين الجودة العالية والأسعار المناسبة.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">⭐</div>
+                        <h3 class="value-title">قيمنا</h3>
+                        <p class="value-desc">الجودة، النظافة، السرعة، والاحترافية هي أسس عملنا التي نلتزم بها يومياً.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">👨‍🍳</div>
+                        <h3 class="value-title">قصة نجاحنا</h3>
+                        <p class="value-desc">بدأنا رحلتنا لتقديم تجربة طعام استثنائية تجمع بين المذاق الأصيل والخدمة المتميزة.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🏆</div>
+                        <h3 class="value-title">جوائز وإنجازات</h3>
+                        <p class="value-desc">حصلنا على ثقة عملائنا كأفضل مطعم في النصيرات لسنوات متتالية.</p>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <div class="achievement">
+                        <span class="achievement-year">2015</span>
+                        <span class="achievement-title">Premium Service</span>
+                    </div>
+                    <div class="achievement">
+                        <span class="achievement-year">2017</span>
+                        <span class="achievement-title">Best Quality</span>
+                    </div>
+                    <div class="achievement">
+                        <span class="achievement-year">2023</span>
+                        <span class="achievement-title">Luxurious Atmosphere</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== لماذا تختارنا WHY CHOOSE US ========== -->
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="why-content">
+                        <h2 class="why-title">لماذا تختارنا</h2>
+                        <div class="why-features">
+                            <div class="why-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>جودة تليق بك</span>
+                            </div>
+                            <div class="why-feature">
+                                <i class="fas fa-fire"></i>
+                                <span>تحضير فوري</span>
+                            </div>
+                            <div class="why-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>دقة المواعيد</span>
+                            </div>
+                            <div class="why-feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>مكونات طازجة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-image">
+                        <img src="assets/images/chef.jpg" alt="Executive Chef" onerror="this.src='assets/images/placeholder.jpg'">
+                        <div class="chef-info">
+                            <h3>Executive Chef</h3>
+                            <p>شيف تنفيذي بخبرة 15 عاماً</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== عن المطعم ABOUT US ========== -->
+        <section class="about-us" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="assets/images/about-restaurant.jpg" alt="مطعم العاصمة" onerror="this.src='assets/images/placeholder.jpg'">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="about-title">ABOUT US</h2>
+                        <p class="about-text">مطعم العاصمة في النصيرات - غزة، حيث نقدم أشهى الوجبات السريعة والمشاوي بجودة عالية وخدمة سريعة. نعتمد أفضل المعايير في اختيار المكونات واللحوم الطازجة يومياً. وجبتك تُحضر بعناية لحظة طلبك لتصلك ساخنة وطازجة تماماً. نلتزم بتقديم خدمة سريعة واحترافية، سواء داخل المطعم أو في التوصيل.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">سنوات خبرة</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">صنف طعام</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10k+</span>
+                                <span class="stat-label">عميل سعيد</span>
+                            </div>
+                        </div>
+                        <a href="menu.html" class="about-btn">VIEW MENU</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== معرض الصور GALLERY ========== -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-ar">معرض الصور</span>
+                    <span class="title-en">GALLERY</span>
+                </h2>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openGalleryModal(0)">
+                        <img src="assets/images/gallery-1.jpg" alt="Wagyu Ribeye Steak" onerror="this.src='assets/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h4>Wagyu Ribeye Steak</h4>
+                            <p>₪65.00</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openGalleryModal(1)">
+                        <img src="assets/images/gallery-2.jpg" alt="Grilled Lamb Chops" onerror="this.src='assets/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h4>Grilled Lamb Chops</h4>
+                            <p>₪65.00</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openGalleryModal(2)">
+                        <img src="assets/images/gallery-3.jpg" alt="Mediterranean Meshwi" onerror="this.src='assets/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h4>Mediterranean Meshwi</h4>
+                            <p>₪65.00</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openGalleryModal(3)">
+                        <img src="assets/images/gallery-4.jpg" alt="Truffle Burger" onerror="this.src='assets/images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h4>Truffle Wagyu Burger</h4>
+                            <p>₪65.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== نموذج الاتصال GET IN TOUCH ========== -->
+        <section class="contact-form-section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info-side">
+                        <h2 class="contact-title">GET IN TOUCH</h2>
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <h4>اسم المستخدم</h4>
+                                    <p>مطعم العاصمة</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>رقم الهاتف</h4>
+                                    <p>+970594804807</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>asemarest@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>+970594804807</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-links">
+                            <h3>قائمة سريعة</h3>
+                            <ul>
+                                <li><a href="#home">الرئيسية</a></li>
+                                <li><a href="menu.html">المنيو</a></li>
+                                <li><a href="#about">عن المطعم</a></li>
+                                <li><a href="#contact">اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-side">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="الاسم" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="whatsapp" placeholder="رقم واتساب">
+                            </div>
+                            <button type="submit" class="submit-btn">إرسال</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== الفوتر FOOTER ========== -->
         <footer>
             <div class="container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <h4>🏛️ مطعم العاصمة</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> النصيرات - دوار أبو صرار</p>
-                        <p><i class="fas fa-envelope"></i> asemarest@gmail.com</p>
-                    </div>
-        
-                    <div class="footer-section">
-                        <h4>أوقات العمل</h4>
-                        <p>يومياً: 12:00 م - 12:00 ص</p>
-                        <p>الجمعة: 2:00 م - 12:00 ص</p>
-                    </div>
-        
-                    <div class="footer-section">
-                        <h4>تواصل معنا</h4>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/asemarest/" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/asemarest" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
-                            <a href="https://wa.me/970594804807" target="_blank" class="social-icon wa"><i class="fab fa-whatsapp"></i></a>
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <img src="assets/images/logo.jpg" alt="ALASEMA">
+                            <h3>ALASEMA</h3>
+                            <p>مطعم العاصمة</p>
                         </div>
-                        <div class="call-action-wrapper">
-                            <a href="tel:0594804807" class="booking-btn call-btn">اطلب وجبتك الآن</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="#home">الرئيسية</a></li>
+                            <li><a href="menu.html">المنيو</a></li>
+                            <li><a href="#about">عن المطعم</a></li>
+                            <li><a href="#contact">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>وسائل التواصل</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/asemarest/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/asemarest" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/+970594804807" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" target="_blank" class="social-icon" id="tiktok-link"><i class="fab fa-tiktok"></i></a>
                         </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>الموقع</h4>
+                        <p>النصيرات - دوار أبو صرار، غزة</p>
+                        <a href="#" class="map-link-footer">www.alasema.com</a>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>© 2026 مطعم العاصمة. جميع الحقوق محفوظة</p>
+                    <p>© 2026 مطعم العاصمة - ALASEMA Restaurant. جميع الحقوق محفوظة</p>
                 </div>
             </div>
         </footer>
     </div>
 
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-modal-close">&times;</span>
+            <img id="gallery-modal-img" src="">
+            <div class="gallery-modal-info">
+                <h3 id="gallery-modal-title"></h3>
+                <p id="gallery-modal-desc"></p>
+                <div class="gallery-modal-price" id="gallery-modal-price"></div>
+                <div class="gallery-modal-contact">
+                    <p><i class="fas fa-envelope"></i> info@alasema.com</p>
+                    <p><i class="fas fa-phone"></i> +970594804807</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>
